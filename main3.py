@@ -24,3 +24,15 @@ print(cd)
 de = np.array([[10],[11]])
 print(np.concatenate((ab,de),axis=1))
 
+
+
+# reshape concept:
+a = np.array([1,2,3,4,5,6,7,8,9])
+print(a.reshape(3,3))
+
+ef = ab.reshape(1,6)
+print(ef)
+
+
+# Condition in an array
+print(a[a>5])
