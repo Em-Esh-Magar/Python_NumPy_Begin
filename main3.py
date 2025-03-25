@@ -1,5 +1,8 @@
 import numpy as np
 
+a = np.array(22)  # --> Zero dimensional array
+print(a)
+        
         
 # sort function   
 a = np.array([5,3,6,7,2])
@@ -58,3 +61,39 @@ print(c)
 
 c = np.hstack((a,b))
 print(c)
+
+
+# Basic array operations  --> addition, subtraction, multiplication and division
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+
+
+
+# 2D array slicing
+a = np.array([[1,2],[3,4],[5,6],[7,8],[9,10]])
+print(a[1:4])
+print(a.max())
+print(a.min())
+print(a.sum())
+
+
+b = np.array([[1,1]])
+c = a+b     # --> is possible due to concept of broadcasting
+print(c)
+
+
+
+# Random number generator
+rng = np.random.default_rng()
+data = rng.random((3,2))
+print(data)
+data = rng.random(5)
+print(data)
+
+
+# unique data
+a = np.array([ [[1,2,3],[4,2,7]], [[4,5,6],[6,7,8]] ])   # #D array using 2D array
+print(a.ndim)
+print(np.unique(a))
